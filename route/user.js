@@ -4,6 +4,6 @@ const router=express.Router();
 const {signup,login}=require("../controller/Sign-login");
 
 router.post("/signup",signup);
-router.post("/login",login);
+// router.post("/login",login);
 
 module.exports=router;
