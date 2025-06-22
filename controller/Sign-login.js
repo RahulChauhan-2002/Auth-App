@@ -26,7 +26,7 @@ exports.signup = async (req,res)=>{
             });
         }
 
-        //insert user into db after hashing
+        //insert a user entry with email and a hashed password for login purpose
         const userData=await User.create({
             name,email,password:hashedPassword,role
         });
